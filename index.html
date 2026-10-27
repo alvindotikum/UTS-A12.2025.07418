@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="GARASI 27 - contoh landing page bengkel mobil profesional. Perawatan berkala, mesin, rem, kaki-kaki, dan kelistrikan. Konsultasi dan rencanakan servis kendaraan Anda.">
+  <meta name="theme-color" content="#171918">
+  <title>Service Dinamo Lancar — Bengkel Mobil & Perawatan Kendaraan</title>
+  <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+  <style>
+    /* Bar nama & NIM yang selalu menempel di bawah layar */
+    .author-bar{position:fixed;left:0;right:0;bottom:0;z-index:90;background:#101211;color:#e7e4dc;border-top:1px solid #414540;font-size:11px;font-weight:800;letter-spacing:.08em;padding-bottom:env(safe-area-inset-bottom)}
+    .author-bar-inner{display:flex;justify-content:space-between;align-items:center;gap:12px;min-height:40px}
+    body{padding-bottom:calc(40px + env(safe-area-inset-bottom))}
+    .toast{bottom:64px}
+    @media(max-width:570px){.author-bar{font-size:10px;letter-spacing:.04em}}
+  </style>
+</head>
+<body>
+  <a class="skip-link" href="#konten">Langsung ke konten</a>
+
+  <div class="topbar">
+    <div class="container topbar-inner">
+      <span><span class="pulse-dot" aria-hidden="true"></span> BENGKEL MOBIL &amp; PERAWATAN KENDARAAN</span>
+      <span class="topbar-note">Dikerjakan dengan teliti, dijelaskan dengan jujur.</span>
+    </div>
+  </div>
+
+  <header class="site-header" id="atas">
+    <nav class="container nav" aria-label="Navigasi utama">
+      <a class="brand" href="#atas" aria-label="Garasi 27, kembali ke beranda">
+        <span class="brand-mark" aria-hidden="true">G<span>27</span></span>
+        <span class="brand-copy"><strong>GARASI 27</strong><small>AUTO SERVICE</small></span>
+      </a>
+      <button class="menu-toggle" id="menu-toggle" type="button" aria-label="Buka menu navigasi" aria-expanded="false" aria-controls="nav-links">
+        <span></span><span></span><span></span>
+      </button>
+      <div class="nav-links" id="nav-links">
+        <a href="#layanan">Layanan</a>
+        <a href="#keunggulan">Kenapa Kami</a>
+        <a href="#alur">Alur Servis</a>
+        <a href="#faq">FAQ</a>
+        <a class="nav-cta" href="#booking">Jadwalkan Servis <span aria-hidden="true">↗</span></a>
+      </div>
+    </nav>
+  </header>
+
+  <main id="konten">
+    <!-- Bagian hero -->
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="container hero-inner">
+        <div class="hero-copy">
+          <div class="eyebrow light"><span class="line"></span> PERFORMA DIMULAI DARI PERAWATAN</div>
+          <h1 id="hero-title">MOBIL SIAP.<br><span>HATI TENANG.</span></h1>
+          <p>Bukan sekadar masuk bengkel lalu pulang. Kami percaya kendaraan yang nyaman berawal dari pengecekan yang teliti, pengerjaan yang rapi, dan komunikasi yang jelas.</p>
+          <div class="hero-actions">
+            <a href="#booking" class="btn btn-accent">Rencanakan Servis <span aria-hidden="true">↗</span></a>
+            <a href="#layanan" class="text-link light-link">Lihat layanan <span aria-hidden="true">↓</span></a>
+          </div>
+          <div class="hero-footnote"><span class="crosshair" aria-hidden="true">✳</span> PERAWATAN RUTIN <span>/</span> PERBAIKAN <span>/</span> DIAGNOSA</div>
+        </div>
+        <div class="hero-visual" role="img" aria-label="Suasana pengerjaan kendaraan di bengkel otomotif">
+          <div class="visual-grid" aria-hidden="true"></div>
+          <div class="visual-sticker"><small>BUKAN ASAL SELESAI.</small><strong>KERJA<br>TUNTAS.</strong><span>EST. / AUTO WORKS</span></div>
+          <span class="visual-caption">01 / WORKSHOP EXPERIENCE</span>
+        </div>
+      </div>
+      <div class="hero-bottom"><div class="container hero-bottom-inner"><span>DETAIL ITU PENTING.</span><span>SETIAP KOMPONEN. SETIAP PERJALANAN.</span><span class="arrow-circle" aria-hidden="true">↘</span></div></div>
+    </section>
+
+    <!-- Pengantar -->
+    <section class="intro section-space" aria-label="Tentang bengkel">
+      <div class="container intro-grid">
+        <div class="eyebrow"><span class="line"></span> LEBIH DARI SEKADAR SERVIS</div>
+        <div><h2 class="intro-quote">KENDARAAN ANDA PUNYA CERITA.<br><em>KAMI BANTU MENJAGANYA.</em></h2><p>Mulai dari servis ringan hingga pemeriksaan komponen penting, setiap pekerjaan dimulai dengan memahami keluhan kendaraan. Tujuan kami sederhana: membantu Anda kembali berkendara dengan lebih percaya diri.</p></div>
+      </div>
+    </section>
+
+    <!-- Layanan -->
+    <section class="services section-space" id="layanan" aria-labelledby="services-title">
+      <div class="container">
+        <div class="section-heading">
+          <div><div class="eyebrow"><span class="line"></span> 01 / APA YANG KAMI KERJAKAN</div><h2 id="services-title">LAYANAN <span>UTAMA.</span></h2></div>
+          <p>Pilih kategori untuk mencari layanan yang sesuai dengan kebutuhan mobil Anda. Klik “Pilih layanan” untuk memasukkannya ke rencana servis.</p>
+        </div>
+        <div class="filter-bar" role="group" aria-label="Filter kategori layanan">
+          <button class="filter-btn active" type="button" data-filter="semua" aria-pressed="true">Semua layanan <span>06</span></button>
+          <button class="filter-btn" type="button" data-filter="perawatan" aria-pressed="false">Perawatan</button>
+          <button class="filter-btn" type="button" data-filter="keselamatan" aria-pressed="false">Keselamatan</button>
+          <button class="filter-btn" type="button" data-filter="elektrikal" aria-pressed="false">Elektrikal &amp; Kabin</button>
+        </div>
+        <div class="service-grid" id="service-grid">
+          <article class="service-card" data-category="perawatan" data-service="Servis Berkala">
+            <div class="service-top"><span class="service-number">01 / PERAWATAN</span><span class="service-symbol" aria-hidden="true">⚙</span></div>
+            <h3>Servis<br>Berkala</h3><p>Pengecekan umum, oli, filter, dan kondisi komponen sesuai kebutuhan kendaraan.</p>
+            <button type="button" class="service-action" data-pick="Servis Berkala">Pilih layanan <span aria-hidden="true">↗</span></button>
+          </article>
+          <article class="service-card" data-category="perawatan" data-service="Diagnosa Mesin">
+            <div class="service-top"><span class="service-number">02 / PERAWATAN</span><span class="service-symbol" aria-hidden="true">◉</span></div>
+            <h3>Diagnosa<br>Mesin</h3><p>Penelusuran gejala mesin tidak normal untuk menentukan langkah perbaikan yang tepat.</p>
+            <button type="button" class="service-action" data-pick="Diagnosa Mesin">Pilih layanan <span aria-hidden="true">↗</span></button>
+          </article>
+          <article class="service-card" data-category="keselamatan" data-service="Rem & Keselamatan">
+            <div class="service-top"><span class="service-number">03 / KESELAMATAN</span><span class="service-symbol" aria-hidden="true">⊕</span></div>
+            <h3>Rem &amp;<br>Keselamatan</h3><p>Pemeriksaan respons rem, kampas, minyak rem, dan bagian pendukung keselamatan.</p>
+            <button type="button" class="service-action" data-pick="Rem & Keselamatan">Pilih layanan <span aria-hidden="true">↗</span></button>
+          </article>
+          <article class="service-card" data-category="elektrikal" data-service="Kelistrikan & Aki">
+            <div class="service-top"><span class="service-number">04 / ELEKTRIKAL</span><span class="service-symbol" aria-hidden="true">ϟ</span></div>
+            <h3>Kelistrikan<br>&amp; Aki</h3><p>Pengecekan aki, pengisian listrik, lampu, starter, dan rangkaian kelistrikan.</p>
+            <button type="button" class="service-action" data-pick="Kelistrikan & Aki">Pilih layanan <span aria-hidden="true">↗</span></button>
+          </article>
+          <article class="service-card" data-category="keselamatan" data-service="Kaki-kaki & Suspensi">
+            <div class="service-top"><span class="service-number">05 / KESELAMATAN</span><span class="service-symbol" aria-hidden="true">⌁</span></div>
+            <h3>Kaki-kaki<br>&amp; Suspensi</h3><p>Penanganan bunyi, getaran, dan kestabilan berkendara pada bagian kaki-kaki.</p>
+            <button type="button" class="service-action" data-pick="Kaki-kaki & Suspensi">Pilih layanan <span aria-hidden="true">↗</span></button>
+          </article>
+          <article class="service-card" data-category="elektrikal" data-service="AC & Kenyamanan Kabin">
+            <div class="service-top"><span class="service-number">06 / ELEKTRIKAL &amp; KABIN</span><span class="service-symbol" aria-hidden="true">❄</span></div>
+            <h3>AC &amp; Kenyamanan<br>Kabin</h3><p>Pemeriksaan pendinginan AC dan komponen yang memengaruhi kenyamanan kabin.</p>
+            <button type="button" class="service-action" data-pick="AC & Kenyamanan Kabin">Pilih layanan <span aria-hidden="true">↗</span></button>
+          </article>
+        </div>
+        <p class="service-disclaimer">* Daftar layanan adalah contoh untuk tugas UTS. Sesuaikan dengan layanan yang benar-benar tersedia di bengkel keluarga.</p>
+      </div>
+    </section>
+
+    <!-- Prinsip -->
+    <section class="why section-space" id="keunggulan" aria-labelledby="why-title">
+      <div class="container why-layout">
+        <div class="why-copy"><div class="eyebrow light"><span class="line"></span> 02 / CARA KAMI BEKERJA</div><h2 id="why-title">JUJUR DI AWAL.<br><span>RAPI SAMPAI AKHIR.</span></h2><p>Pelayanan bengkel yang baik bukan hanya soal alat, tetapi soal perhatian pada detail dan komunikasi kepada pelanggan.</p><a class="text-link light-link" href="#alur">Lihat proses pengerjaan <span aria-hidden="true">↗</span></a></div>
+        <div class="principles">
+          <div class="principle"><span class="principle-no">01</span><div><h3>Dengar keluhannya dulu.</h3><p>Kami mulai dengan memahami gejala yang Anda rasakan saat berkendara.</p></div><span aria-hidden="true">↗</span></div>
+          <div class="principle"><span class="principle-no">02</span><div><h3>Periksa sebelum bertindak.</h3><p>Pemeriksaan membantu menentukan penanganan yang lebih sesuai kebutuhan.</p></div><span aria-hidden="true">↗</span></div>
+          <div class="principle"><span class="principle-no">03</span><div><h3>Jelaskan hasil pengerjaan.</h3><p>Pelanggan perlu memahami apa yang ditemukan dan apa yang telah dilakukan.</p></div><span aria-hidden="true">↗</span></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Alur -->
+    <section class="process section-space" id="alur" aria-labelledby="process-title">
+      <div class="container process-grid">
+        <div class="process-visual" role="img" aria-label="Detail area servis dan peralatan bengkel"><span class="process-badge">CARE IN EVERY DETAIL / 27</span></div>
+        <div class="process-copy">
+          <div class="eyebrow"><span class="line"></span> 03 / ALUR PELAYANAN</div><h2 id="process-title">SIMPLE BUAT ANDA.<br><span>JELAS PROSESNYA.</span></h2>
+          <ol class="steps">
+            <li><span class="step-index">01</span><div><h3>Ceritakan keluhan</h3><p>Pilih layanan dan sampaikan kondisi mobil melalui formulir rencana servis.</p></div></li>
+            <li><span class="step-index">02</span><div><h3>Konsultasi dan pengecekan</h3><p>Diskusikan kebutuhan pengerjaan setelah bengkel menerima permintaan Anda.</p></div></li>
+            <li><span class="step-index">03</span><div><h3>Penanganan kendaraan</h3><p>Pengerjaan dilakukan sesuai hasil pemeriksaan dan kesepakatan layanan.</p></div></li>
+          </ol>
+          <a href="#booking" class="btn btn-dark">Mulai rencanakan servis <span aria-hidden="true">↗</span></a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Booking interaktif (simulasi front-end) -->
+    <section class="booking section-space" id="booking" aria-labelledby="booking-title">
+      <div class="container booking-head"><div class="eyebrow"><span class="line"></span> 04 / RENCANA KUNJUNGAN</div><h2 id="booking-title">SIAP MASUK <span>BENGKEL?</span></h2><p>Isi data berikut untuk menyusun ringkasan permintaan servis. Fitur ini adalah simulasi formulir, belum mengirim data ke server.</p></div>
+      <div class="container booking-layout">
+        <form class="booking-form" id="booking-form" novalidate>
+          <div class="form-section-label"><span>01</span> DATA PEMILIK &amp; KENDARAAN</div>
+          <div class="form-grid">
+            <div class="field"><label for="nama">Nama Anda <span aria-hidden="true">*</span></label><input id="nama" name="nama" type="text" placeholder="Nama lengkap" autocomplete="name" minlength="2" required><small class="field-error" id="error-nama"></small></div>
+            <div class="field"><label for="telepon">Nomor WhatsApp <span aria-hidden="true">*</span></label><input id="telepon" name="telepon" type="tel" inputmode="tel" autocomplete="tel" placeholder="08xxxxxxxxxx" required><small class="field-error" id="error-telepon"></small></div>
+            <div class="field"><label for="kendaraan">Jenis kendaraan <span aria-hidden="true">*</span></label><select id="kendaraan" name="kendaraan" required><option value="">Pilih kendaraan</option><option value="Mobil pribadi">Mobil pribadi</option><option value="Mobil niaga">Mobil niaga</option><option value="Lainnya">Lainnya</option></select><small class="field-error" id="error-kendaraan"></small></div>
+            <div class="field"><label for="tanggal">Tanggal yang diinginkan <span aria-hidden="true">*</span></label><input id="tanggal" name="tanggal" type="date" required><small class="field-error" id="error-tanggal"></small></div>
+          </div>
+          <div class="form-section-label second"><span>02</span> PILIH KEBUTUHAN SERVIS</div>
+          <fieldset class="service-options"><legend class="sr-only">Pilih satu atau beberapa layanan</legend>
+            <label class="service-check"><input type="checkbox" name="layanan" value="Servis Berkala"><span>Servis Berkala</span></label>
+            <label class="service-check"><input type="checkbox" name="layanan" value="Diagnosa Mesin"><span>Diagnosa Mesin</span></label>
+            <label class="service-check"><input type="checkbox" name="layanan" value="Rem &amp; Keselamatan"><span>Rem &amp; Keselamatan</span></label>
+            <label class="service-check"><input type="checkbox" name="layanan" value="Kelistrikan &amp; Aki"><span>Kelistrikan &amp; Aki</span></label>
+            <label class="service-check"><input type="checkbox" name="layanan" value="Kaki-kaki &amp; Suspensi"><span>Kaki-kaki &amp; Suspensi</span></label>
+            <label class="service-check"><input type="checkbox" name="layanan" value="AC &amp; Kenyamanan Kabin"><span>AC &amp; Kabin</span></label>
+          </fieldset>
+          <p class="field-error selection-error" id="error-layanan" role="alert"></p>
+          <div class="field full"><label for="keluhan">Ceritakan keluhan mobil <span class="optional">(opsional)</span></label><textarea id="keluhan" name="keluhan" rows="4" maxlength="500" placeholder="Contoh: mobil terasa bergetar saat pengereman, atau aki sering tekor..."></textarea></div>
+          <button class="btn btn-accent form-submit" type="submit">Buat Ringkasan Servis <span aria-hidden="true">↗</span></button>
+          <p class="form-notice"><span aria-hidden="true">ⓘ</span> Tidak ada data yang dikirim otomatis. Anda dapat menyalin ringkasan atau menghubungi bengkel setelah nomor resmi ditambahkan.</p>
+        </form>
+        <aside class="booking-summary" aria-label="Pratinjau rencana servis">
+          <span class="summary-meta">DOKUMEN / RENCANA SERVIS</span><div class="summary-icon" aria-hidden="true">✳</div><h3>YOUR NEXT<br><span>PIT STOP.</span></h3>
+          <div class="summary-rule"></div>
+          <div class="summary-line"><span>Layanan terpilih</span><strong id="service-count" aria-live="polite">0 layanan</strong></div>
+          <ul id="selected-list" class="selected-list" aria-live="polite"><li>Belum ada layanan dipilih.</li></ul>
+          <div class="summary-rule"></div>
+          <div class="summary-line"><span>Jadwal pilihan</span><strong id="date-preview">Belum dipilih</strong></div>
+          <p class="summary-note">Jadwal baru merupakan permintaan dan harus dikonfirmasi oleh pihak bengkel. Tidak ada pembayaran melalui website ini.</p>
+          <span class="summary-corner" aria-hidden="true">27 / SERVICE PLAN</span>
+        </aside>
+      </div>
+    </section>
+
+    <!-- Tanya jawab -->
+    <section class="faq section-space" id="faq" aria-labelledby="faq-title">
+      <div class="container faq-grid">
+        <div><div class="eyebrow"><span class="line"></span> 05 / PERTANYAAN UMUM</div><h2 id="faq-title">SEBELUM<br><span>KE BENGKEL.</span></h2><p class="faq-intro">Beberapa hal yang biasanya ingin diketahui pelanggan sebelum melakukan servis.</p></div>
+        <div class="faq-list">
+          <details><summary>Apakah harus membuat jadwal terlebih dahulu? <span aria-hidden="true">+</span></summary><p>Anda bisa mengisi formulir rencana servis untuk menyiapkan informasi kendaraan. Ketersediaan jadwal tetap perlu dikonfirmasi langsung dengan pihak bengkel.</p></details>
+          <details><summary>Apakah biaya servis langsung terlihat di website? <span aria-hidden="true">+</span></summary><p>Belum. Biaya bergantung pada jenis kendaraan, hasil pengecekan, dan suku cadang yang diperlukan. Konsultasikan perkiraan biaya dengan bengkel sebelum pengerjaan.</p></details>
+          <details><summary>Apakah semua masalah kendaraan bisa ditangani? <span aria-hidden="true">+</span></summary><p>Penanganan bergantung pada jenis gangguan dan kapasitas bengkel. Jelaskan keluhan kendaraan agar tim dapat mengonfirmasi apakah layanan tersedia.</p></details>
+          <details><summary>Apakah pengiriman formulir sudah otomatis? <span aria-hidden="true">+</span></summary><p>Belum. Website UTS ini berjalan di sisi browser (HTML, CSS, JavaScript). Formulir menyusun ringkasan yang bisa disalin; untuk pengiriman WhatsApp, nomor bengkel asli harus diatur terlebih dahulu.</p></details>
+        </div>
+      </div>
+    </section>
+
+    <section class="last-cta" aria-label="Ajakan servis"><div class="container last-cta-inner"><div><small>SUDAH SIAP?</small><h2>JANGAN TUNGGU<br>SAMPAI <span>MOGOK.</span></h2></div><a href="#booking" class="btn btn-white">Buat Rencana Servis <span aria-hidden="true">↗</span></a></div></section>
+  </main>
+
+  <footer class="site-footer"><div class="container footer-main"><div><a class="footer-brand" href="#atas">GARASI <span>27.</span></a><p>Bengkel dan perawatan kendaraan dengan pendekatan teliti, komunikatif, dan praktis.</p><small>Identitas, layanan, dan informasi bengkel pada halaman ini adalah contoh desain UTS.</small></div><div class="footer-menu"><strong>JELAJAHI</strong><a href="#layanan">Layanan</a><a href="#keunggulan">Prinsip kerja</a><a href="#booking">Rencana servis</a><a href="#faq">FAQ</a></div><div class="footer-contact"><strong>INFORMASI BENGKEL</strong><p>Nama asli, alamat, jam operasional, dan nomor kontak: silakan ganti menggunakan data bengkel keluarga sebelum dipublikasikan.</p><a href="#booking">Siapkan permintaan servis ↗</a></div></div><div class="container footer-bottom"><span>© <span id="year">2026</span> GARASI 27. KONSEP LANDING PAGE UTS.</span><span>BUILT WITH HTML / CSS / JAVASCRIPT</span><a href="#atas">Kembali ke atas ↑</a></div></footer>
+
+  <!-- Bar identitas: menempel di bawah layar, selalu terlihat saat scroll -->
+  <div class="author-bar" role="contentinfo"><div class="container author-bar-inner"><span>Alvindo Tata Ardiansyah</span><span>A12.2025.07418</span></div></div>
+
+  <!-- Dialog ringkasan setelah validasi -->
+  <dialog id="result-dialog" class="result-dialog" aria-labelledby="dialog-title"><div class="dialog-head"><span>RINGKASAN PERMINTAAN SERVIS</span><button type="button" class="dialog-close" id="close-dialog" aria-label="Tutup dialog">✕</button></div><div class="dialog-body"><span class="dialog-check" aria-hidden="true">✓</span><h2 id="dialog-title">Rencana servis siap.</h2><p>Silakan salin ringkasan di bawah ini. Permintaan belum terkirim ke bengkel.</p><pre id="result-text" class="result-text"></pre><div class="dialog-actions"><button type="button" class="btn btn-dark" id="copy-summary">Salin Ringkasan</button><button type="button" class="btn btn-outline" id="whatsapp-summary">Kirim via WhatsApp ↗</button></div><p class="dialog-hint" id="dialog-hint">Tombol WhatsApp aktif setelah nomor bengkel asli diisi dalam script.js.</p></div></dialog>
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+</body>
+</html>
